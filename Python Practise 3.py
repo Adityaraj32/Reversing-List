@@ -1,8 +1,17 @@
+'''
+Author: Adityaraj Yadav 
+Date: 8 January 2022
+Project Name: Reversing a list 
+Purpose: For Practising Purpose
+'''
+
 # Reversing a String
 
-                                            # Taking Input for the list
-#this is a mannual type list you can also use it                                             
-# list1 = [1,50,100,500]
+# Taking Input for the list
+# this is a mannual type list you can also use it
+# list1 = [1,50,100,500].
+
+
 Times = int(input("Enter how many numbers should be in the list: "))
 list1 = []
 for i in range(Times):
@@ -22,7 +31,8 @@ print(f"The Reversed list of {list1}is{reverse2}")
 # using replacing the first letter and second letter for first and so on
 reverse3 = list1[:]
 for i in range(len(reverse3)//2):
-    reverse3[i],reverse3[len(reverse3)-i-1] = reverse3[len(reverse3)-i-1] , reverse3[i]
+    reverse3[i], reverse3[len(reverse3)-i -
+                          1] = reverse3[len(reverse3)-i-1], reverse3[i]
 print(f"The Reversed list of {list1}is{reverse3}")
 
 if reverse == reverse2 and reverse2 == reverse3:
